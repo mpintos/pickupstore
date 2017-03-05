@@ -1,0 +1,190 @@
+// Formato de saida para o openTextField
+// [570d61bd44f4797f0c39ff41|ANDREANI-BRANCH-WITHDRAWAL] - Andreani Sucursal
+// Formato de entrada para o MapInit
+// mapInit("ANDREANI-BRANCH-WITHDRAWAL");
+// https://dpvtex.lyracons.com/vtex/assets/pickupstore.min.js
+
+var map, marker, $seleccionado, $courierId;
+
+var mapa = {
+	initCoord: {
+		lat: -34.589693,
+		log: -58.518333
+	},
+	pin: "//lyracons.vtexcommercestable.com.br/arquivos/generic.png",
+	html: "<div class='warp-lyracons-black'><div class='warp-lyracons-box'><div class='lyracons-top'><h3 class='lyracons-top--title'>Elegí la sucursal más cercana</h3><span class='lyracons-top--close'><i class='fa fa-times' aria-hidden='true'></i></span></div><div class='lyracons-places'><ul class='lyracons-places--list'></ul></div><div id='lyracons-map'></div><div class='lyracons-footer'><span class='lyracons-footer--sucursal'></span><button class='lyracons-footer--select'>Seleccionar</button></div></div></div>",
+	template: "{{#each items}}<li id='store-{{id}}' data-id='{{counter @index}}' data-lat='{{coord.latitude}}' data-log='{{coord.longitude}}'><div class='check'></div><div class='info'><input type='hidden' value='{{id}}' name='branch-id' id='branch-id' /><h3 class='name'>{{name}}</h3><address class='address'>{{address}}</address><p class='time'><b>Horario:</b> {{#Time time}}{{this}}{{/Time}}</p><p class='phones'><b>Teléfono:</b> {{#each phones}}<span>{{this}}</span>{{/each}}</p></div></li>{{/each}}",
+	init: function(courierId) {
+		var markers = [];
+		var $url = "https://dpvtex.lyracons.com/vtex/service/branch?courierId=" + courierId;
+
+		$courierId = courierId;
+
+		map = new google.maps.Map(document.getElementById("lyracons-map"), {
+			zoom: 10,
+			center: new google.maps.LatLng(mapa.initCoord.lat, mapa.initCoord.log)
+		});
+
+		$.ajax({
+			type: "GET",
+			url: $url,
+			success: function(result) {
+				if (result != "") {
+					try {
+						var $json = mapa.createJson(result);
+						mapa.handleBars(mapa.template, $json, ".lyracons-places--list");
+						mapa.listTrigger(marker);
+						mapa.close(".lyracons-top--close", marker);
+						mapa.selectSucursal();
+						$(".lyracons-footer--sucursal").html("");
+						$(".warp-lyracons-black").show();
+						setTimeout(mapa.resizeTrigger, 1000);
+					} catch (err) {
+						console.error(err);
+						return false;
+					}
+				} else {
+					return false;
+				}
+
+			},
+			error: function(err) {
+				console.error(err);
+				return false;
+			}
+		});
+	},
+	action: function(element) {
+		$(element).prependTo(".lyracons-places--list");
+		$(".lyracons-places--list").scrollTop(0);
+		$(element).addClass("checked");
+		$(element).siblings().removeClass("checked");
+	},
+	handleBars: function(template, content, elemento) {
+		var compiledTemplate = Handlebars.compile(template);
+		Handlebars.registerHelper('Time', function(a) {
+			return (a == null) ? "No disponible" : a;
+		});
+		Handlebars.registerHelper("counter", function(index) {
+			return index;
+		});
+		var html = compiledTemplate(content);
+		$(elemento).html(html);
+	},
+	createJson: function(result) {
+		var $json = [];
+		$json["items"] = [];
+		$.each(result, function(i, e) {
+			$json.items.push(e);
+		});
+		return $json;
+	},
+	markerCreate: function(result, markers) {
+		$.each(result, function(i, data) {
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng(data.coord.latitude, data.coord.longitude),
+				center: new google.maps.LatLng(data.coord.latitude, data.coord.longitude)
+			});
+			marker.setMap(map);
+			markers.push(marker);
+			marker.addListener('click', function() {
+				map.setZoom(18);
+				map.setCenter(new google.maps.LatLng(data.coord.latitude, data.coord.longitude));
+				mapa.action("#store-" + data.id);
+			});
+		});
+	},
+	listTrigger: function() {
+		$(".lyracons-places--list [id^='store-']").click(function() {
+			var $lat = $(this).data("lat");
+			var $log = $(this).data("log");
+			var $id = "#" + $(this).attr("id");
+
+			$(".lyracons-footer--sucursal").html($(this).find(".info").html());
+
+			mapa.action($(this));
+
+			marker = new google.maps.Marker({
+				position: new google.maps.LatLng($lat, $log),
+				center: new google.maps.LatLng($lat, $log),
+				map: map
+			});
+
+			marker.addListener('click', function() {
+				map.setZoom(18);
+				map.setCenter(new google.maps.LatLng($lat, $log));
+				mapa.action($id);
+			});
+
+			map.setZoom(18);
+			map.setCenter(new google.maps.LatLng($lat, $log));
+		});
+	},
+	close: function(element, marker) {
+		$(document).on("click", element, function() {
+			$(".warp-lyracons-black").hide();
+			mapa.checkNoSelectSucursal();
+		})
+	},
+	activeMap: function() {
+		$(document).on("click", "[for^='seller-1-sla-']", function() {
+			var $branchId = window.location.hostname.split("."),
+				$branchId = $branchId[0].toUpperCase();
+
+			$(".lyracons-places--list").html("<div class='pin bounce'></div><div class='pulse'></div>");
+
+			var $id = $(this).find(".shipping-option-item-name").text(),
+				$id = $id.toLowerCase();
+
+			$seleccionado = $(this);
+			console.log($seleccionado);
+
+			if ($id == "retiro en sucursal") {
+				mapa.init($branchId + "-BRANCH-WITHDRAWAL");
+			} else if ($id == "retiro en sucursal andreani") {
+				mapa.init("ANDREANI-BRANCH-WITHDRAWAL");
+			}
+		});
+	},
+	resizeTrigger: function() {
+		google.maps.event.trigger(map, "resize");
+		map.setCenter(new google.maps.LatLng(mapa.initCoord.lat, mapa.initCoord.log));
+	},
+	openTextField: function(name, courierId) {
+		courier = (courierId != "ANDREANI-BRANCH-WITHDRAWAL") ? "Retiro en Sucursal" : "Retiro en Sucursal Andreani";
+		var $obs = (name + " - " + courier);
+		vtexjs.checkout.getOrderForm().then(function(orderForm) {
+			return vtexjs.checkout.sendAttachment('openTextField', {
+				value: $obs
+			});
+		}).done(function(orderForm) {
+			console.log(orderForm.openTextField);
+		});
+	},
+	checkNoSelectSucursal: function() {
+		$(".shipping-option-item-name:not(:contains('Sucursal'))").each(function(i, e) {
+			if (i === 0) {
+				$(this).parent().trigger("click");
+			}
+		});
+	},
+	selectSucursal: function() {
+		$(document).on("click", ".lyracons-footer--select", function() {
+			if ($(".lyracons-footer--sucursal #branch-id").length == 0) {
+				$(".lyracons-footer--sucursal").html("<span>Elegí la sucursal más cercana</span>");
+			} else {
+				var $name = $(".lyracons-footer--sucursal .name").text();
+				setTimeout(mapa.openTextField($name, $courierId), 1000);
+				$(".warp-lyracons-black").hide();
+				setTimeout(mapa.activeMap, 1000);
+				console.log($seleccionado.parent());
+				// $seleccionado.parent().trigger("click");
+			}
+		});
+	}
+};
+
+$(function() {
+	$(mapa.html).appendTo("body");
+	setTimeout(mapa.activeMap, 1000);
+});

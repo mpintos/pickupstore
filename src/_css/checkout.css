@@ -1,0 +1,6 @@
+[for^="seller-1-sla-"] .shipping-option-item-text-wrapper .shipping-option-item-time {
+  display: none;
+}
+[for^="seller-1-sla-"] .shipping-option-item-text-wrapper .shipping-option-item-sep:nth-child(4) {
+  display: none;
+}

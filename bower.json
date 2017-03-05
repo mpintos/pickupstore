@@ -1,0 +1,28 @@
+{
+  "name": "pickup-store",
+  "description": "Pickup Store - Lyracons to Vtex",
+  "main": "Gruntfile.js",
+  "authors": [
+    "Lyracons and Ze Luiz Rodrigues <zeluizr@thefirm.com.br>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "pickup",
+    "store",
+    "lyracons",
+    "vtex",
+    "maps",
+    "google"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}

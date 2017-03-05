@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+
+	body {
+		height: inherit;
+	}
+
+}
+
+.hide {
+	display: none;
+}
+
+.address-shipping-options {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+}
+
+.shipping-options {
+	border: none;
+}
+
+.shipping-options h4 {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.shipping-option-item {
+	display: block;
+}
