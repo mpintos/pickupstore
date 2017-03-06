@@ -72,7 +72,7 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container {
+.vtexcarries .prestigioweb-container {
   width: 100%;
   max-width: 860px;
   height: 500px;
@@ -81,14 +81,14 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   box-sizing: border-box;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container {
+  .vtexcarries .prestigioweb-container {
     width: 100%;
     height: 100%;
     max-width: 100%;
     padding: 0;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content {
+.vtexcarries .prestigioweb-container .prestigioweb-content {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -101,26 +101,26 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   box-sizing: border-box;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content {
+  .vtexcarries .prestigioweb-container .prestigioweb-content {
     width: 100%;
     height: 100%;
     max-width: 100%;
     padding: 0;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top {
   width: 100%;
   height: auto;
   overflow: hidden;
   box-sizing: border-box;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top {
     padding: 0 20px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-title {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-title {
   width: calc(100% - 32px);
   height: auto;
   line-height: 60px;
@@ -131,17 +131,17 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   box-sizing: border-box;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-title {
-    font-size: 1em;
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-title {
+    font-size: .85em;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close {
   width: 32px;
   height: 60px;
   float: left;
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close {
   width: 32px;
   height: 32px;
   margin-top: 15px;
@@ -150,11 +150,11 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   position: relative;
   cursor: pointer;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close:hover {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close:hover {
   opacity: 1;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close:before,
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close:before,
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -163,17 +163,17 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   top: 2px;
   background-color: #333;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close:before {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close:before {
   transform: rotate(45deg);
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-top .vtexcarries-close .close:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-top .prestigioweb-close .close:after {
   transform: rotate(-45deg);
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle {
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left {
-  width: 50%;
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left {
+  width: 49%;
   height: 420px;
   overflow: hidden;
   float: left;
@@ -181,20 +181,26 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   box-sizing: border-box;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left {
     width: 100%;
     height: calc(100vh - 60px);
     float: none;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box {
+  box-sizing: border-box;
+  border: 1px solid #e6e6e6;
+  height: 100%;
+  position: relative;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container {
   display: none;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container .pin {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container .pin {
   width: 30px;
   height: 30px;
   border-radius: 50% 50% 50% 0;
-  background: green;
+  background: #FA7C1C;
   position: absolute;
   transform: rotate(-45deg);
   left: 50%;
@@ -202,7 +208,7 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   margin: -20px 0 0 -20px;
   z-index: 9999;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container .pin:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container .pin:after {
   content: "";
   width: 14px;
   height: 14px;
@@ -211,12 +217,12 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   position: absolute;
   border-radius: 50%;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container .pin.bounce {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container .pin.bounce {
   animation-name: bounce;
   animation-fill-mode: both;
   animation-duration: 1s;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container .pulse {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container .pulse {
   background: #f2f2f2;
   border-radius: 50%;
   height: 14px;
@@ -228,7 +234,7 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   transform: rotateX(55deg);
   z-index: 9998;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .pulse-container .pulse:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .pulse-container .pulse:after {
   content: "";
   border-radius: 50%;
   height: 40px;
@@ -238,25 +244,25 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   animation: pulsate 1s ease-out;
   animation-iteration-count: infinite;
   opacity: 0;
-  box-shadow: 0 0 1px 2px green;
+  box-shadow: 0 0 1px 2px #FA7C1C;
   animation-delay: 1.1s;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places {
-  width: auto;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  padding: 0;
-  margin: 0;
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #FFF;
   box-sizing: border-box;
-  border: 1px solid #e6e6e6;
 }
-@media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places {
-    border: none;
-  }
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias li {
   border-bottom: 1px solid #e6e6e6;
   padding: 15px;
   display: flex;
@@ -264,22 +270,14 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   cursor: pointer;
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-]:last-child {
-  border-bottom: none;
-}
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-].checked {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias li.checked {
   background-color: #fcfcfc;
-  padding: 10px 15px;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-].checked .info .time,
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-].checked .info .phones {
-  display: block;
-}
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-].checked .check {
-  background-color: green;
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias li.checked .check {
+  background-color: #FA7C1C;
   box-shadow: inset 0 0 0 3px #FFF;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .check {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias li .check {
   width: 14px;
   height: 14px;
   border-radius: 100%;
@@ -287,44 +285,116 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   margin-right: 20px;
   background-color: #ffffff;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias li .info {
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias .prestigioweb-provincia {
+  box-sizing: border-box;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias .prestigioweb-provincia p {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: text;
+  margin: 0;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias .prestigioweb-provincia p.checked {
+  cursor: pointer;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias .prestigioweb-provincia p.checked:after {
+  content: "\f021";
+  color: #FA7C1C;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-container-box .prestigioweb-select .prestigioweb-provincias .prestigioweb-provincia p:after {
+  content: "\f0dd";
+  font-family: "FontAwesome";
+  float: right;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places {
+  width: auto;
+  height: calc(100% - 45px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 50px 0 0;
+  box-sizing: border-box;
+}
+@media (max-width: 680px) {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places {
+    border: none;
+  }
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-]:last-child {
+  border-bottom: none;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-].checked {
+  background-color: #fcfcfc;
+  padding: 10px 15px;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-].checked .info .time,
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-].checked .info .phones {
+  display: block;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-].checked .check {
+  background-color: #FA7C1C;
+  box-shadow: inset 0 0 0 3px #FFF;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .check {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  border: 1px solid #e6e6e6;
+  margin-right: 20px;
+  background-color: #ffffff;
+}
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info {
   flex: 1;
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .name {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .name {
   color: #000;
   font-weight: 600;
   font-size: 1em;
   line-height: 25px;
   margin: 0;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .address {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .address {
   color: #808080;
   font-style: normal;
   line-height: normal;
   font-size: 1em;
   margin-bottom: 0;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .time,
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .phones {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .time,
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .phones {
   display: none;
-  color: green;
+  color: #FA7C1C;
   font-style: normal;
   font-size: 1em;
   margin-bottom: 0;
   line-height: 25px;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .time [class^="phone-"]:before,
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .phones [class^="phone-"]:before {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .time [class^="phone-"]:before,
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .phones [class^="phone-"]:before {
   content: "/";
   margin: 0 5px;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .time .phone-0:before,
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-left .vtexcarries-places [id^=store-] .info .phones .phone-0:before {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .time .phone-0:before,
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-left .prestigioweb-places [id^=store-] .info .phones .phone-0:before {
   content: " ";
   margin: 0;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right {
   width: 50%;
   height: 420px;
   overflow: hidden;
@@ -333,18 +403,18 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   box-sizing: border-box;
   border: 1px solid #e6e6e6;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-back {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-back {
   display: none;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right {
     width: 100%;
     height: calc(100vh - 60px);
     float: none;
     display: none;
     border: none;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-back {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-back {
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -359,19 +429,19 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
     display: block;
     box-sizing: border-box;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-back i {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-back i {
     font-size: 2.1em;
     line-height: 40px;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container {
   display: none;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container .pin {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container .pin {
   width: 30px;
   height: 30px;
   border-radius: 50% 50% 50% 0;
-  background: green;
+  background: #FA7C1C;
   position: absolute;
   transform: rotate(-45deg);
   left: 50%;
@@ -379,7 +449,7 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   margin: -20px 0 0 -20px;
   z-index: 9999;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container .pin:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container .pin:after {
   content: "";
   width: 14px;
   height: 14px;
@@ -388,12 +458,12 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   position: absolute;
   border-radius: 50%;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container .pin.bounce {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container .pin.bounce {
   animation-name: bounce;
   animation-fill-mode: both;
   animation-duration: 1s;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container .pulse {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container .pulse {
   background: #f2f2f2;
   border-radius: 50%;
   height: 14px;
@@ -405,7 +475,7 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   transform: rotateX(55deg);
   z-index: 9998;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .pulse-container .pulse:after {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .pulse-container .pulse:after {
   content: "";
   border-radius: 50%;
   height: 40px;
@@ -415,20 +485,20 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   animation: pulsate 1s ease-out;
   animation-iteration-count: infinite;
   opacity: 0;
-  box-shadow: 0 0 1px 2px green;
+  box-shadow: 0 0 1px 2px #FA7C1C;
   animation-delay: 1.1s;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right #vtexcarries-map {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right #prestigioweb-map {
   box-sizing: border-box;
   width: 100%;
   height: 420px;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right #vtexcarries-map {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right #prestigioweb-map {
     height: calc(100vh - 60px);
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer {
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -437,11 +507,11 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
   padding: 0 20px 20px;
   box-sizing: border-box;
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info {
   visibility: hidden;
 }
 @media (max-width: 680px) {
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info {
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -451,45 +521,45 @@ label[for^="seller-1-sla-"][for*="RetiroenSucursaldeAndreani"] .shipping-option-
     visibility: visible;
     box-sizing: border-box;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .name {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .name {
     color: #000;
     font-weight: 600;
     font-size: 1em;
     line-height: 25px;
     margin: 0;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .address {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .address {
     color: #808080;
     font-style: normal;
     line-height: normal;
     font-size: 1em;
     margin-bottom: 0;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .time,
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .phones {
-    color: green;
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .time,
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .phones {
+    color: #FA7C1C;
     font-style: normal;
     font-size: 1em;
     margin-bottom: 0;
     line-height: 25px;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .time [class^="phone-"]:before,
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .phones [class^="phone-"]:before {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .time [class^="phone-"]:before,
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .phones [class^="phone-"]:before {
     content: "/";
     margin: 0 5px;
   }
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .time .phone-0:before,
-  .vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .info .phones .phone-0:before {
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .time .phone-0:before,
+  .vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .info .phones .phone-0:before {
     content: " ";
     margin: 0;
   }
 }
-.vtexcarries .vtexcarries-container .vtexcarries-content .vtexcarries-middle .vtexcarries-right .vtexcarries-footer .vtexcarries-button {
+.vtexcarries .prestigioweb-container .prestigioweb-content .prestigioweb-middle .prestigioweb-right .prestigioweb-footer .prestigioweb-button {
   width: 100%;
   height: 50px;
   border: none;
-  background-color: green;
-  border-bottom: 2px solid #004d00;
+  background-color: #FA7C1C;
+  border-bottom: 2px solid #de6305;
   border-radius: 2px;
   color: #FFF;
   font: bold 18px 'Work Sans', sans-serif;

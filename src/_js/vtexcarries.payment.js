@@ -1,16 +1,12 @@
 $(function() {
-	if (dataLayer[dataLayer.length - 1].orderFormShippingMethod[0] != "Envio a Domicilio") {
-		if (typeof dataLayer[dataLayer.length - 2].vtexcarries != "undefined") {
-			if (dataLayer[dataLayer.length - 1].orderFormShippingMethod[0] == "Retiro en Sucursal Andreani") {
-				saveOBS(dataLayer[dataLayer.length - 2].vtexcarries);
-			}
-		} else {
+	var _sla = dataLayer[dataLayer.length - 1].orderFormShippingMethod[0];
+	var _carrie = dataLayer[0].vtexcarries;
+	if (_sla == "Retiro en Sucursal") {
+		if (_carrie == undefined) {
 			window.location.href = "#shipping";
+		} else {
+			saveOBS(_carrie);
 		}
-	} else if (dataLayer[dataLayer.length - 1].orderFormShippingMethod[0] == "Envio a Domicilio") {
-		return true
-	} else {
-		window.location.href = "#shipping";
 	}
 
 	function saveOBS(argument) {

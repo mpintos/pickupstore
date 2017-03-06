@@ -10,7 +10,7 @@
 			width: 30px;
 			height: 30px;
 			border-radius: 50% 50% 50% 0;
-			background: green;
+			background: #FA7C1C;
 			position: absolute;
 			transform: rotate(-45deg);
 			left: 50%;
@@ -27,15 +27,12 @@
 				position: absolute;
 				border-radius: 50%;
 			}
-
 			&.bounce {
 				animation-name: bounce;
 				animation-fill-mode: both;
 				animation-duration: 1s;
 			}
-
 		}
-
 		.pulse {
 			background: darken(#FFF, 5%);
 			border-radius: 50%;
@@ -58,101 +55,73 @@
 				animation: pulsate 1s ease-out;
 				animation-iteration-count: infinite;
 				opacity: 0;
-				box-shadow: 0 0 1px 2px green;
+				box-shadow: 0 0 1px 2px #FA7C1C;
 				animation-delay: 1.1s;
 			}
-
 		}
-
 	}
-
 }
-
 @keyframes pulsate {
 	0% {
 		transform: scale(0.1, 0.1);
 		opacity: 0;
 	}
-
 	50% {
 		opacity: 1;
 	}
-
 	100% {
 		transform: scale(1.2, 1.2);
 		opacity: 0;
 	}
-
 }
-
 @keyframes bounce {
 	0% {
 		opacity: 0;
 		transform: translateY(-2000px) rotate(-45deg);
 	}
-
 	60% {
 		opacity: 1;
 		transform: translateY(30px) rotate(-45deg);
 	}
-
 	80% {
 		transform: translateY(-10px) rotate(-45deg);
 	}
-
 	100% {
 		transform: translateY(0) rotate(-45deg);
 	}
-
 }
-
 label[for^="seller-1-sla-"] {
 	.shipping-option-item-text-wrapper {
 		.shipping-option-item-time {
 			display: none;
 		}
-
 		.shipping-option-item-sep {
 			&:nth-child(4) {
 				display: none;
 			}
-
 		}
-
 	}
-
-	&[for*="retirosucursalandreani"],
-	&[for*="retirosucursal"] {
+	&[for*="retirosucursalandreani"], &[for*="retirosucursal"] {
 		display: none;
 	}
-
 	&[for*="RetiroenSucursaldeAndreani"] {
 		.shipping-option-item-value {
 			display: none;
 		}
-
 		.shipping-option-item-sep {
 			&:nth-child(2) {
 				display: none;
 			}
-
 		}
-
 	}
-
 }
-
 .shipping-selected-sla {
 	span {
-		&:nth-child(3),
-		&:nth-child(4) {
+		&:nth-child(3), &:nth-child(4) {
 			display: none;
 		}
-
 	}
-
 }
-
 .vtexcarries {
 	width: 100%;
 	height: 100%;
@@ -176,15 +145,13 @@ label[for^="seller-1-sla-"] {
 		-moz-osx-font-smoothing: grayscale;
 		box-sizing: border-box;
 	}
-
-	.vtexcarries-container {
+	.prestigioweb-container {
 		@media (max-width:680px) {
 			width: 100%;
 			height: 100%;
 			max-width: 100%;
 			padding: 0;
 		}
-
 		width: 100%;
 		max-width: 860px;
 		height: 500px;
@@ -192,14 +159,13 @@ label[for^="seller-1-sla-"] {
 		padding: 20px;
 		box-sizing: border-box;
 
-		.vtexcarries-content {
+		.prestigioweb-content {
 			@media (max-width:680px) {
 				width: 100%;
 				height: 100%;
 				max-width: 100%;
 				padding: 0;
 			}
-
 			width: 100%;
 			height: auto;
 			overflow: hidden;
@@ -211,22 +177,20 @@ label[for^="seller-1-sla-"] {
 			border-radius: 2px;
 			box-sizing: border-box;
 
-			.vtexcarries-top {
+			.prestigioweb-top {
 				@media (max-width:680px) {
 					padding: 0 20px;
 					border-bottom: 1px solid darken(#FFF, 10%);
 				}
-
 				width: 100%;
 				height: auto;
 				overflow: hidden;
 				box-sizing: border-box;
 
-				.vtexcarries-title {
+				.prestigioweb-title {
 					@media (max-width:680px) {
-						font-size: 1em;
+						font-size: .85em;
 					}
-
 					width: calc(~"100% - 32px");
 					height: auto;
 					line-height: 60px;
@@ -236,8 +200,7 @@ label[for^="seller-1-sla-"] {
 					margin: 0;
 					box-sizing: border-box;
 				}
-
-				.vtexcarries-close {
+				.prestigioweb-close {
 					width: 32px;
 					height: 60px;
 					float: left;
@@ -255,9 +218,7 @@ label[for^="seller-1-sla-"] {
 						&:hover {
 							opacity: 1;
 						}
-
-						&:before,
-						&:after {
+						&:before, &:after {
 							position: absolute;
 							left: 15px;
 							content: ' ';
@@ -266,52 +227,122 @@ label[for^="seller-1-sla-"] {
 							top: 2px;
 							background-color: #333;
 						}
-
 						&:before {
 							transform: rotate(45deg);
 						}
-
 						&:after {
 							transform: rotate(-45deg);
 						}
-
 					}
-
 				}
-
 			}
-
-			.vtexcarries-middle {
+			.prestigioweb-middle {
 				box-sizing: border-box;
 
-				.vtexcarries-left {
+				.prestigioweb-left {
 					@media (max-width:680px) {
 						width: 100%;
 						height: calc(~"100vh - 60px");
 						float: none;
 					}
-
-					width: 50%;
+					width: 49%;
 					height: 420px;
 					overflow: hidden;
 					float: left;
 					position: relative;
 					box-sizing: border-box;
-					.loading();
 
-					.vtexcarries-places {
+					.prestigioweb-container-box {
+						box-sizing: border-box;
+						border: 1px solid darken(#FFF, 10%);
+						height: 100%;
+						.loading();
+						position: relative;
+
+						.prestigioweb-select {
+							width: 100%;
+							position: absolute;
+							top: 0;
+							background-color: #FFF;
+							box-sizing: border-box;
+
+							.prestigioweb-provincias {
+								width: 100%;
+								height: auto;
+								overflow: hidden;
+								box-sizing: border-box;
+								margin: 0;
+								padding: 0;
+
+								li {
+									border-bottom: 1px solid darken(#FFF, 10%);
+									padding: 15px;
+									display: flex;
+									align-items: center;
+									cursor: pointer;
+									box-sizing: border-box;
+
+									&.checked {
+										background-color: darken(#FFF, 1%);
+
+										.check {
+											background-color: #FA7C1C;
+											box-shadow: inset 0 0 0 3px #FFF;
+										}
+									}
+									.check {
+										width: 14px;
+										height: 14px;
+										border-radius: 100%;
+										border: 1px solid darken(#FFF, 10%);
+										margin-right: 20px;
+										background-color: rgb(255, 255, 255);
+									}
+									.info {
+										flex: 1;
+										text-transform: uppercase;
+										font-weight: bold;
+									}
+								}
+								.prestigioweb-provincia {
+									box-sizing: border-box;
+
+									p {
+										width: 100%;
+										text-transform: uppercase;
+										font-weight: bold;
+										cursor: text;
+										margin: 0;
+
+										&.checked {
+											cursor: pointer;
+
+											&:after {
+												content: "\f021";
+												color: #FA7C1C;
+											}
+										}
+										&:after {
+											content: "\f0dd";
+											font-family: "FontAwesome";
+											float: right;
+										}
+									}
+								}
+							}
+						}
+					}
+					.prestigioweb-places {
 						@media (max-width:680px) {
 							border: none;
 						}
-
 						width: auto;
-						height: 100%;
+						height: calc(~"100% - 45px");
 						overflow-x: hidden;
 						overflow-y: scroll;
 						padding: 0;
-						margin: 0;
+						margin: 50px 0 0;
 						box-sizing: border-box;
-						border: 1px solid darken(#FFF, 10%);
 
 						[id^=store-] {
 							border-bottom: 1px solid darken(#FFF, 10%);
@@ -324,26 +355,20 @@ label[for^="seller-1-sla-"] {
 							&:last-child {
 								border-bottom: none;
 							}
-
 							&.checked {
 								background-color: darken(#FFF, 1%);
 								padding: 10px 15px;
 
 								.info {
-									.time,
-									.phones {
+									.time, .phones {
 										display: block;
 									}
-
 								}
-
 								.check {
-									background-color: green;
+									background-color: #FA7C1C;
 									box-shadow: inset 0 0 0 3px #FFF;
 								}
-
 							}
-
 							.check {
 								width: 14px;
 								height: 14px;
@@ -352,7 +377,6 @@ label[for^="seller-1-sla-"] {
 								margin-right: 20px;
 								background-color: rgb(255, 255, 255);
 							}
-
 							.info {
 								flex: 1;
 								box-sizing: border-box;
@@ -364,7 +388,6 @@ label[for^="seller-1-sla-"] {
 									line-height: 25px;
 									margin: 0;
 								}
-
 								.address {
 									color: darken(#FFF, 50%);
 									font-style: normal;
@@ -372,11 +395,9 @@ label[for^="seller-1-sla-"] {
 									font-size: 1em;
 									margin-bottom: 0;
 								}
-
-								.time,
-								.phones {
+								.time, .phones {
 									display: none;
-									color: green;
+									color: #FA7C1C;
 									font-style: normal;
 									font-size: 1em;
 									margin-bottom: 0;
@@ -387,34 +408,24 @@ label[for^="seller-1-sla-"] {
 											content: "/";
 											margin: 0 5px;
 										}
-
 									}
-
 									.phone-0 {
 										&:before {
 											content: " ";
 											margin: 0;
 										}
-
 									}
-
 								}
-
 							}
-
 						}
-
 					}
-
 				}
-
-				.vtexcarries-right {
+				.prestigioweb-right {
 					box-sizing: border-box;
 
-					.vtexcarries-back {
+					.prestigioweb-back {
 						display: none;
 					}
-
 					@media (max-width:680px) {
 						width: 100%;
 						height: calc(~"100vh - 60px");
@@ -422,7 +433,7 @@ label[for^="seller-1-sla-"] {
 						display: none;
 						border: none;
 
-						.vtexcarries-back {
+						.prestigioweb-back {
 							width: 40px;
 							height: 40px;
 							border-radius: 100%;
@@ -441,11 +452,8 @@ label[for^="seller-1-sla-"] {
 								font-size: 2.1em;
 								line-height: 40px;
 							}
-
 						}
-
 					}
-
 					width: 50%;
 					height: 420px;
 					overflow: hidden;
@@ -455,18 +463,16 @@ label[for^="seller-1-sla-"] {
 					border: 1px solid darken(#FFF, 10%);
 					.loading();
 
-					#vtexcarries-map {
+					#prestigioweb-map {
 						box-sizing: border-box;
 
 						@media (max-width:680px) {
 							height: calc(~"100vh - 60px");
 						}
-
 						width: 100%;
 						height: 420px;
 					}
-
-					.vtexcarries-footer {
+					.prestigioweb-footer {
 						width: 100%;
 						height: auto;
 						overflow: hidden;
@@ -478,7 +484,6 @@ label[for^="seller-1-sla-"] {
 						.info {
 							visibility: hidden;
 						}
-
 						@media (max-width:680px) {
 							.info {
 								width: 100%;
@@ -497,7 +502,6 @@ label[for^="seller-1-sla-"] {
 									line-height: 25px;
 									margin: 0;
 								}
-
 								.address {
 									color: darken(#FFF, 50%);
 									font-style: normal;
@@ -505,10 +509,8 @@ label[for^="seller-1-sla-"] {
 									font-size: 1em;
 									margin-bottom: 0;
 								}
-
-								.time,
-								.phones {
-									color: green;
+								.time, .phones {
+									color: #FA7C1C;
 									font-style: normal;
 									font-size: 1em;
 									margin-bottom: 0;
@@ -519,29 +521,22 @@ label[for^="seller-1-sla-"] {
 											content: "/";
 											margin: 0 5px;
 										}
-
 									}
-
 									.phone-0 {
 										&:before {
 											content: " ";
 											margin: 0;
 										}
-
 									}
-
 								}
-
 							}
-
 						}
-
-						.vtexcarries-button {
+						.prestigioweb-button {
 							width: 100%;
 							height: 50px;
 							border: none;
-							background-color: green;
-							border-bottom: 2px solid darken(green, 10%);
+							background-color: #FA7C1C;
+							border-bottom: 2px solid darken(#FA7C1C, 10%);
 							border-radius: 2px;
 							color: #FFF;
 							font: bold 18px 'Work Sans', sans-serif;
@@ -550,15 +545,9 @@ label[for^="seller-1-sla-"] {
 							display: none;
 							box-sizing: border-box;
 						}
-
 					}
-
 				}
-
 			}
-
 		}
-
 	}
-
 }
